@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
       
-		String[] creatures = {"Dragon 🐉", "Unicorn 🦄", "Phoenix 🪽", "Mermaid 🧜🏽‍♀️", "Fairy 🧚🏼"};
+		String[] creatures = {"Dragon", "Unicorn", "Minotaur", "Gnome", "Phoenix", "Mermaid", "Fairy"};
 
-		// HINT: This CodeCollab demonstrates several Array ALGORITHMS
+		// HINT: This CodeCollab demonstrates several Array ALGORITHMS!
+		
 		// LOOP #1
 		System.out.println("Fantasy creatures:");
 		for (String creature : creatures) {
@@ -36,13 +37,13 @@ public class Main {
 		boolean found = false;
 		for (int i = 0; i < creatures.length; i++) {
 			if (creatures[i].equalsIgnoreCase(target)) {
-				System.out.println("Creature \"" + target + "\" found at index " + i);
+				System.out.println("Creature " + target + " found at index " + i);
 				found = true;
 				break;
 		   }
 		}
 		if (!found) {
-			System.out.println("Creature \"" + target + "\" not found in the array.");
+			System.out.println("Creature " + target + " not found in the array.");
 		}
 		
 		// LOOP #5
@@ -56,6 +57,5 @@ public class Main {
 		}
 		System.out.println("There are " + count + " creatures with names longer than " + lengthThreshold + " characters.");
 
-		scanner.close();
 	}
 }
